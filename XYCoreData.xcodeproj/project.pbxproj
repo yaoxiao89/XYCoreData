@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		13714260205DCDAC001CA781 /* XYCoreData.h in Headers */ = {isa = PBXBuildFile; fileRef = 1371425E205DCDAC001CA781 /* XYCoreData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13714267205DCF31001CA781 /* NSPersistentContainer+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13714266205DCF31001CA781 /* NSPersistentContainer+Factory.swift */; };
+		1371426A205EBBE0001CA781 /* Bundle+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13714269205EBBE0001CA781 /* Bundle+CoreData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1371425B205DCDAC001CA781 /* XYCoreData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XYCoreData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1371425E205DCDAC001CA781 /* XYCoreData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYCoreData.h; sourceTree = "<group>"; };
 		1371425F205DCDAC001CA781 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13714266205DCF31001CA781 /* NSPersistentContainer+Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSPersistentContainer+Factory.swift"; sourceTree = "<group>"; };
+		13714269205EBBE0001CA781 /* Bundle+CoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+CoreData.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +50,20 @@
 		1371425D205DCDAC001CA781 /* XYCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				13714269205EBBE0001CA781 /* Bundle+CoreData.swift */,
+				13714266205DCF31001CA781 /* NSPersistentContainer+Factory.swift */,
+				13714268205DCF35001CA781 /* Support Files */,
+			);
+			path = XYCoreData;
+			sourceTree = "<group>";
+		};
+		13714268205DCF35001CA781 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
 				1371425E205DCDAC001CA781 /* XYCoreData.h */,
 				1371425F205DCDAC001CA781 /* Info.plist */,
 			);
-			path = XYCoreData;
+			name = "Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +109,7 @@
 				TargetAttributes = {
 					1371425A205DCDAC001CA781 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +146,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1371426A205EBBE0001CA781 /* Bundle+CoreData.swift in Sources */,
+				13714267205DCF31001CA781 /* NSPersistentContainer+Factory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +271,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -268,6 +286,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoyao.XYCoreData;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -277,6 +296,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
