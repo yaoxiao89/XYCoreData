@@ -2,7 +2,6 @@
 //  NSPersistentContainer+Factory.swift
 //  XYCoreData
 //
-//  Created by Xiao Yao on 12/30/17.
 //  Copyright © 2017 Xiao Yao. All rights reserved.
 //
 

@@ -2,7 +2,6 @@
 //  XYCoreData.h
 //  XYCoreData
 //
-//  Created by Xiao Yao on 3/17/18.
 //  Copyright © 2018 Xiao Yao. All rights reserved.
 //
 

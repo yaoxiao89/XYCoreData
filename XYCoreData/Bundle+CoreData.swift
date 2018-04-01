@@ -2,7 +2,6 @@
 //  Bundle+CoreData.swift
 //  XYCoreData
 //
-//  Created by Xiao Yao on 12/19/17.
 //  Copyright © 2017 Xiao Yao. All rights reserved.
 //
 
