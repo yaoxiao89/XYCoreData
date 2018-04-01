@@ -2,7 +2,8 @@
 //  Bundle+CoreData.swift
 //  XYCoreData
 //
-//  Copyright © 2017 Xiao Yao. All rights reserved.
+//  Copyright © 2018 Xiao Yao. All rights reserved.
+//  See LICENSE.txt for licensing information
 //
 
 import Foundation
