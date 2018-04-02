@@ -18,7 +18,7 @@ $ brew update
 $ brew install carthage
 ```
 
-To add XYUserAccount as a dependency to your project using Carthage, add it to your Cartfile:
+To add XYCoreData as a dependency to your project using Carthage, add it to your Cartfile:
 
 ```
 github "yaoxiao89/XYCoreData" ~> 1.0
