@@ -10,6 +10,7 @@
 		13714260205DCDAC001CA781 /* XYCoreData.h in Headers */ = {isa = PBXBuildFile; fileRef = 1371425E205DCDAC001CA781 /* XYCoreData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13714267205DCF31001CA781 /* NSPersistentContainer+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13714266205DCF31001CA781 /* NSPersistentContainer+Factory.swift */; };
 		1371426A205EBBE0001CA781 /* Bundle+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13714269205EBBE0001CA781 /* Bundle+CoreData.swift */; };
+		13C0912320726A6400EE7367 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 13C0912220726A6400EE7367 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +19,7 @@
 		1371425F205DCDAC001CA781 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13714266205DCF31001CA781 /* NSPersistentContainer+Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSPersistentContainer+Factory.swift"; sourceTree = "<group>"; };
 		13714269205EBBE0001CA781 /* Bundle+CoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+CoreData.swift"; sourceTree = "<group>"; };
+		13C0912220726A6400EE7367 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +36,7 @@
 		13714251205DCDAC001CA781 = {
 			isa = PBXGroup;
 			children = (
+				13C0912220726A6400EE7367 /* README.md */,
 				1371425D205DCDAC001CA781 /* XYCoreData */,
 				1371425C205DCDAC001CA781 /* Products */,
 			);
@@ -136,6 +139,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13C0912320726A6400EE7367 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
