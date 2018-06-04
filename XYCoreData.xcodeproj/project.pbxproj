@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1313059420C4C02E00011976 /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1313059320C4C02E00011976 /* CoreDataController.swift */; };
+		1313059620C4C09900011976 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 1313059520C4C09900011976 /* Cartfile */; };
+		1313059920C4C0C600011976 /* XYUserDefaults.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1313059820C4C0C600011976 /* XYUserDefaults.framework */; };
+		131305B520C4C2DD00011976 /* XYCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 131305B420C4C2DC00011976 /* XYCommon.framework */; };
 		13714260205DCDAC001CA781 /* XYCoreData.h in Headers */ = {isa = PBXBuildFile; fileRef = 1371425E205DCDAC001CA781 /* XYCoreData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13714267205DCF31001CA781 /* NSPersistentContainer+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13714266205DCF31001CA781 /* NSPersistentContainer+Factory.swift */; };
 		1371426A205EBBE0001CA781 /* Bundle+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13714269205EBBE0001CA781 /* Bundle+CoreData.swift */; };
@@ -14,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1313059320C4C02E00011976 /* CoreDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
+		1313059520C4C09900011976 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		1313059820C4C0C600011976 /* XYUserDefaults.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XYUserDefaults.framework; path = Carthage/Build/iOS/XYUserDefaults.framework; sourceTree = "<group>"; };
+		131305B420C4C2DC00011976 /* XYCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XYCommon.framework; path = Carthage/Build/iOS/XYCommon.framework; sourceTree = "<group>"; };
 		1371425B205DCDAC001CA781 /* XYCoreData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XYCoreData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1371425E205DCDAC001CA781 /* XYCoreData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYCoreData.h; sourceTree = "<group>"; };
 		1371425F205DCDAC001CA781 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -27,18 +35,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				131305B520C4C2DD00011976 /* XYCommon.framework in Frameworks */,
+				1313059920C4C0C600011976 /* XYUserDefaults.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1313059720C4C0C600011976 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				131305B420C4C2DC00011976 /* XYCommon.framework */,
+				1313059820C4C0C600011976 /* XYUserDefaults.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		13714251205DCDAC001CA781 = {
 			isa = PBXGroup;
 			children = (
+				1313059520C4C09900011976 /* Cartfile */,
 				13C0912220726A6400EE7367 /* README.md */,
 				1371425D205DCDAC001CA781 /* XYCoreData */,
 				1371425C205DCDAC001CA781 /* Products */,
+				1313059720C4C0C600011976 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				13714269205EBBE0001CA781 /* Bundle+CoreData.swift */,
+				1313059320C4C02E00011976 /* CoreDataController.swift */,
 				13714266205DCF31001CA781 /* NSPersistentContainer+Factory.swift */,
 				13714268205DCF35001CA781 /* Support Files */,
 			);
@@ -139,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1313059620C4C09900011976 /* Cartfile in Resources */,
 				13C0912320726A6400EE7367 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,6 +175,7 @@
 			files = (
 				1371426A205EBBE0001CA781 /* Bundle+CoreData.swift in Sources */,
 				13714267205DCF31001CA781 /* NSPersistentContainer+Factory.swift in Sources */,
+				1313059420C4C02E00011976 /* CoreDataController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +311,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = XYCoreData/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -312,6 +340,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = XYCoreData/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
