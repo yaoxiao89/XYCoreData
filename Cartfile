@@ -1,2 +1,2 @@
 github "yaoxiao89/XYUserDefaults.git" ~> 1.0
-github "yaoxiao89/XYCommon" "master"
+github "yaoxiao89/XYCommon" ~> 0.1
