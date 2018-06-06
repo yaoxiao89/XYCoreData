@@ -25,6 +25,7 @@ public class CoreDataController {
     public let persistentContainer: NSPersistentContainer
     
     private let userDefaults: UserDefaults?
+    private let bundle: Bundle
     
     private var notificationToken: NotificationToken?
     
@@ -36,11 +37,12 @@ public class CoreDataController {
     
     public var shouldRefreshData: Bool {
         guard let lastBundleID = userDefaults?.lastBundleIDToPersist else { return false }
-        return lastBundleID != Bundle.main.bundleIdentifier
+        return lastBundleID != bundle.bundleIdentifier
     }
     
-    public init(groupID: String?, name: String = "Database", completionHandler: @escaping (_ error: Error?) -> Void) {
+    public init(groupID: String? = nil, bundle: Bundle = Bundle.main, name: String = "Database", completionHandler: @escaping (_ error: Error?) -> Void) {
         userDefaults = UserDefaults(suiteName: groupID)
+        self.bundle = bundle
         
         persistentContainer = NSPersistentContainer(
             name: name,
@@ -49,9 +51,10 @@ public class CoreDataController {
         )
         
         let center = NotificationCenter.default
+        
         notificationToken = center.addObserver(forName: Notification.Name.NSManagedObjectContextDidSave) { [weak self] (note) in
             guard let `self` = self else { return }
-            self.userDefaults?.lastBundleIDToPersist = Bundle.main.bundleIdentifier
+            self.userDefaults?.lastBundleIDToPersist = self.bundle.bundleIdentifier
         }
         
         persistentContainer.viewContext.automaticallyMergesChangesFromParent = true
